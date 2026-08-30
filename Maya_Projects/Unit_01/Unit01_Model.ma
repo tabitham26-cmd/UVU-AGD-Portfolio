@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit01_Model.ma
-//Last modified: Sun, Aug 30, 2026 05:34:45 PM
+//Last modified: Sun, Aug 30, 2026 05:55:41 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "85E54BE6-46C3-A611-8ECF-DDB43D113A60";
+fileInfo "UUID" "0B58F2A0-4A0F-CDB0-8DD6-82A4B572D596";
 createNode transform -s -n "persp";
 	rename -uid "71276A4C-4139-C85F-3F07-17A486B8DA33";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.785216326261846 8.1064416891752433 4.2641103479835056 ;
-	setAttr ".r" -type "double3" -378.93835272617497 -297.00000000002905 0 ;
+	setAttr ".t" -type "double3" 14.091764747947664 8.6796684220413169 6.0905767557174624 ;
+	setAttr ".r" -type "double3" -381.33835272617267 -323.80000000002696 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "4C3197A8-4AED-B4B6-F4DB-4E83C6D5CDCD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 13.406838246521557;
+	setAttr ".coi" 10.81467121641921;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -47,13 +47,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "7571D54D-427D-2474-54FB-AF90D6EA05C8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0 0 1000.1 ;
+	setAttr ".t" -type "double3" 7.627746399850186 3.9319185622369432 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "B433B7D7-47C8-7B90-46F9-29986C26C521";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 12.085291670738455;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -62,14 +62,14 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "side";
 	rename -uid "DA436780-4508-7A90-60C4-668D6D768D90";
-	setAttr ".t" -type "double3" 1000.1 4.1092211280214856 4.0017905102954359 ;
+	setAttr ".t" -type "double3" 1000.1 4.5978222612078854 -2.690457376708379 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "3A670DBF-4279-9E23-F1B1-D084EBBC24C0";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 19.040975555946538;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
